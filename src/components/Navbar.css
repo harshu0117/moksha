@@ -1,0 +1,60 @@
+/* Basic styles */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #17181c;
+    
+  }
+
+ 
+  
+  .navbar.bg-green {
+    background-color: green !important;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Navbar brand styling */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  /* Navbar item spacing */
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+    color: black;
+    font-size:large;
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  /* Hover effects */
+  .nav-link:hover {
+    color: #f8f2f2 !important;
+  }
+  
+  /* Button toggler styles */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  }
+  
+  /* Media query adjustments if needed */
+  @media (max-width: 992px) {
+    .navbar-nav .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
